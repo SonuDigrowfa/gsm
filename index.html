@@ -45,6 +45,17 @@
             </ul>
         </div>
     </footer>
+    <div class="custom-footer-bar">
+        <div class="footer-content">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
         <style>
  /* Reset some default styles */
@@ -108,6 +119,69 @@
         width: auto; /* Allow columns to take full width */
     }
 }
+/* Styling for the custom footer bar */
+.custom-footer-bar {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Optional: add a shadow at the bottom */
+}
 
+/* Styling for the footer content */
+.custom-footer-bar .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-footer-bar .footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.custom-footer-bar .footer-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.custom-footer-bar .footer-links li {
+    margin-right: 10px;
+}
+
+.custom-footer-bar .footer-links li:last-child {
+    margin-right: 0;
+}
+
+.custom-footer-bar .footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.custom-footer-bar .footer-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .custom-footer-bar .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .custom-footer-bar .footer-links {
+        margin-top: 10px;
+    }
+
+    .custom-footer-bar .footer-links li {
+        margin: 0 5px;
+    }
+}
         </style>
 </html>
