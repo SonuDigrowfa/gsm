@@ -47,7 +47,7 @@
     </footer>
 </body>
         <style>
-                /* Reset some default styles */
+ /* Reset some default styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -66,7 +66,7 @@
 
 /* Styling for each custom column */
 .custom-column {
-    flex: 1; /* Equal width for each column */
+    flex: 1 0 250px; /* Equal width initially, minimum 250px width */
     margin: 0 10px; /* Adjust spacing between columns */
 }
 
@@ -95,6 +95,18 @@
 
 .custom-column ul li a:hover {
     text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .custom-footer {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+
+    .custom-column {
+        margin: 10px 0; /* Adjust spacing between columns */
+        width: auto; /* Allow columns to take full width */
+    }
 }
 
         </style>
